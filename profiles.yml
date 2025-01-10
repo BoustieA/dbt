@@ -1,0 +1,7 @@
+default:
+  outputs:
+    dev:
+      type: bigquery
+      project: glowing-magnet-447408-s5
+      dataset: gz_raw_data      # Nom du dataset où dbt créera les objets
+      location: europe-west9
