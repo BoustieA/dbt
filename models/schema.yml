@@ -5,5 +5,11 @@ sources:
     schema: gz_raw_data
     tables: 
        - name: sales
+         description: "sales of Greenweez"  
+         columns: 
+            - name: date_date 
+              description: date of purchase 
+            - name: orders_id 
+              description: foreign key to ship 
        - name: ship
        - name: product
