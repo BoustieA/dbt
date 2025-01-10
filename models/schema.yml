@@ -1,0 +1,24 @@
+version: 2
+ 
+sources: 
+  - name: data
+    schema: gz_raw_data
+    tables: 
+       - name: sales
+         description: "sales of Greenweez"  
+         columns: 
+            - name: date_date 
+              description: date of purchase 
+            - name: orders_id 
+              description: foreign key to ship 
+       - name: ship
+       - name: product
+         description: "products of Greenweez"  
+         columns: 
+            - name: products_id
+              description: primary key
+              tests:
+                - unique
+                - not_null
+            - name: purchase_price
+              description: price of purchase
