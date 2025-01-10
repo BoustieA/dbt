@@ -5,3 +5,6 @@ default:
       project: glowing-magnet-447408-s5
       dataset: gz_raw_data      # Nom du dataset où dbt créera les objets
       location: europe-west9
+      threads: 1
+      timeout_seconds: 300
+  target: dev
