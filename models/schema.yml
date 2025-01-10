@@ -1,7 +1,8 @@
 version: 2
  
 sources: 
-  - name: gz_raw_data
+  - name: data
+    schema: gz_raw_data
     tables: 
        - name: sales
        - name: ship
