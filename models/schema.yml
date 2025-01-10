@@ -13,3 +13,12 @@ sources:
               description: foreign key to ship 
        - name: ship
        - name: product
+         description: "products of Greenweez"  
+         columns: 
+            - name: products_id
+              description: primary key
+              tests:
+                - unique
+                - not_null
+            - name: purchase_price
+              description: price of purchase
